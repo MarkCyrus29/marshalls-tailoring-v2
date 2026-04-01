@@ -3,6 +3,14 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import { Bodoni_Moda } from "next/font/google";
+
+const bodoniModa = Bodoni_Moda({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://marshallstailoring.vercel.app"),
@@ -75,7 +83,7 @@ export default function RootLayout({
         <meta name="geo.region" content="PH-BTG" />
         <meta name="geo.placename" content="Lipa City, Batangas" />
       </head>
-      <body className="antialiased">
+      <body className={`antialiased ${bodoniModa.className}`}>
         <div className="paper-grain" aria-hidden="true" />
         <LocalBusinessSchema />
         <Navbar />
