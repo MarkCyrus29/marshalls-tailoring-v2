@@ -14,7 +14,7 @@ const categories = [
   "Coats for Rent",
 ] as const;
 
-type Category = (typeof categories)[number];``
+type Category = (typeof categories)[number];
 
 interface PortfolioItem {
   id: number;
