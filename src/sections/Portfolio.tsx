@@ -14,7 +14,7 @@ const categories = [
   "Coats for Rent",
 ] as const;
 
-type Category = (typeof categories)[number];
+type Category = (typeof categories)[number];``
 
 interface PortfolioItem {
   id: number;
@@ -217,7 +217,7 @@ export function Portfolio() {
           </motion.div>
         </AnimatePresence>
         {filtered.length > 3 && (
-          <div className="mt-8 text-center sm:hidden">
+          <div className="mt-8 text-center ">
             <button
               type="button"
               onClick={() => setShowAllMobile((prev) => !prev)}
