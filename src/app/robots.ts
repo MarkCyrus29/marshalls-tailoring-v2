@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "www.marshallstailoring.com/sitemap.xml",
+    sitemap: "https://marshallstailoring.com/sitemap.xml",
   };
 }

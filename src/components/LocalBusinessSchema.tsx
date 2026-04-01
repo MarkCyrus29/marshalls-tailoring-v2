@@ -5,7 +5,7 @@ export default function LocalBusinessSchema() {
     name: "Marshalls Tailoring",
     description:
       "Bespoke suits, barongs, and uniforms for men and women in Lipa City. Formal coats and suits available for rent.",
-    url: "www.marshallstailoring.com",
+    url: "https://marshallstailoring.com",
     telephone: ["+639452731100", "+639397401011"],
     email: "marshalls.tailoring@gmail.com",
     address: {

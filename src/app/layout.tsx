@@ -13,7 +13,7 @@ const bodoniModa = Bodoni_Moda({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("www.marshallstailoring.com"),
+  metadataBase: new URL("https://marshallstailoring.com"),
   title: {
     default:
       "Marshalls Tailoring | Bespoke Suits, Uniforms & Coat Rentals — Lipa City",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_PH",
-    url: "www.marshallstailoring.com",
+    url: "https://marshallstailoring.com",
     siteName: "Marshalls Tailoring",
     title:
       "Marshalls Tailoring | Bespoke Suits, Uniforms & Coat Rentals — Lipa City",
