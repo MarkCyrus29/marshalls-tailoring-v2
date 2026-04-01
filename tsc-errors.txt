@@ -1,0 +1,3 @@
+﻿src/app/layout.tsx(5,10): error TS2614: Module '"@/components/LocalBusinessSchema"' has no exported member 'LocalBusinessSchema'. Did you mean to use 'import LocalBusinessSchema from "@/components/LocalBusinessSchema"' instead?
+src/sections/Services.tsx(77,17): error TS2322: Type '{ children: Element[]; key: string; delay: number; className: string; style: CSSProperties; }' is not assignable to type 'IntrinsicAttributes & AnimatedSectionProps'.
+  Property 'style' does not exist on type 'IntrinsicAttributes & AnimatedSectionProps'.

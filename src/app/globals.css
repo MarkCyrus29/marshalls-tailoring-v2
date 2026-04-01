@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+/* ── Google Fonts ─────────────────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Source+Sans+3:wght@300;400;500;600&display=swap");
+
+/* ── Design Tokens ───────────────────────────────────────── */
+@theme {
+  /* Brand Colors */
+  --color-brand-blue: #1b3fa6;
+  --color-brand-blue-dark: #122980;
+  --color-brand-blue-light: #e8edf9;
+  --color-brand-blue-mid: #4a6bcc;
+  --color-brand-blue-tint: #f0f3fc;
+
+  /* Gold accent — tailoring luxury detail */
+  --color-gold: #b8962e;
+  --color-gold-light: #f5ead4;
+
+  /* Neutral / Background */
+  --color-bg: #f8f8f6;
+  --color-bg-warm: #f4f4f0;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f0f2f8;
+
+  /* Text */
+  --color-ink: #1a1f2e;
+  --color-ink-muted: #4b5563;
+  --color-ink-subtle: #9ca3af;
+
+  /* Border */
+  --color-border: #dde2ee;
+  --color-border-strong: #bbc4de;
+
+  /* Fonts */
+  --font-serif: Bodoni Moda , Times New Roman, serif;
+  --font-sans: "Source Sans 3", system-ui, sans-serif;
+
+  /* Border-radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-2xl: 3rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px 0 rgba(27, 63, 166, 0.06),
+    0 1px 2px -1px rgba(27, 63, 166, 0.04);
+  --shadow-md: 0 4px 16px -2px rgba(27, 63, 166, 0.08),
+    0 2px 6px -2px rgba(27, 63, 166, 0.04);
+  --shadow-lg: 0 12px 32px -4px rgba(27, 63, 166, 0.1),
+    0 4px 10px -4px rgba(27, 63, 166, 0.05);
+  --shadow-xl: 0 24px 48px -8px rgba(27, 63, 166, 0.14),
+    0 8px 16px -8px rgba(27, 63, 166, 0.06);
+  --shadow-blue-glow: 0 0 0 3px rgba(27, 63, 166, 0.15);
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Animation keyframes */
+  --animate-fade-up: fade-up 0.6s var(--ease-out-expo) both;
+  --animate-fade-in: fade-in 0.5s ease-out both;
+}
+
+/* ── Keyframes ───────────────────────────────────────────── */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ── Base Styles ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  min-height: 100dvh;
+}
+
+/* Selection colour */
+::selection {
+  background-color: var(--color-brand-blue-light);
+  color: var(--color-brand-blue-dark);
+}
+
+/* Focus ring consistent with brand */
+:focus-visible {
+  outline: 2px solid var(--color-brand-blue);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Headings use serif */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  line-height: 1.2;
+}
+
+/* Smooth image rendering */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Utility Classes ─────────────────────────────────────── */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Container utility */
+.container-site {
+  width: 100%;
+  max-width: 80rem; /* 1280px */
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-site {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-site {
+    padding-inline: 2rem;
+  }
+}
+
+/* Paper grain texture — the defining tactile detail */
+.paper-grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.018;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* ── Section spacing ─────────────────────────────────────── */
+.section-py {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 1024px) {
+  .section-py {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* Decorative horizontal rule — thin cobalt line */
+.rule-brand {
+  width: 4rem;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    var(--color-brand-blue),
+    var(--color-brand-blue-mid)
+  );
+  border: none;
+}
+
+/* Arch image shape */
+.arch-image {
+  border-radius: 200px 200px 0 0;
+}
+
+/* ── Custom scrollbar ────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-blue-light);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-blue-mid);
+}
