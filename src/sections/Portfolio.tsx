@@ -6,12 +6,12 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import Image from "next/image";
 
 const categories = [
   "All",
-  "Suits & Barongs",
+  "Suits",
   "Uniforms",
-  "Coats for Rent",
 ] as const;
 
 type Category = (typeof categories)[number];
@@ -20,73 +20,143 @@ interface PortfolioItem {
   id: number;
   category: Exclude<Category, "All">;
   label: string;
+  src: string;
   alt: string;
-  placeholder: string;
 }
 
+const COAT_STARTING_LINK = "/gallery/coat/";
+const UNIFORM_STARTING_LINK = "/gallery/uniform/";
+
 const items: PortfolioItem[] = [
+  // Men's Coats
   {
     id: 1,
-    category: "Suits & Barongs",
-    label: "Bespoke Suit",
+    category: "Suits",
+    label: "Custom Suit",
+    src: COAT_STARTING_LINK + "men/1.jpg",
     alt: "A custom-tailored men's suit",
-    placeholder: "#dde6f5",
   },
   {
     id: 2,
-    category: "Uniforms",
-    label: "School Uniform",
-    alt: "Custom school uniforms",
-    placeholder: "#e0e8f7",
+    category: "Suits",
+    label: "Custom Suit",
+    src: COAT_STARTING_LINK + "men/2.jpg",
+    alt: "A custom-tailored men's suit",
   },
   {
     id: 3,
-    category: "Coats for Rent",
-    label: "Formal Coat",
-    alt: "Formal coat available for rent",
-    placeholder: "#cdd9f3",
+    category: "Suits",
+    label: "Custom Suit",
+    src: COAT_STARTING_LINK + "men/3.jpg",
+    alt: "A custom-tailored men's suit",
   },
   {
     id: 4,
-    category: "Suits & Barongs",
-    label: "Barong Tagalog",
-    alt: "Hand-crafted Barong Tagalog",
-    placeholder: "#dde6f5",
+    category: "Suits",
+    label: "Custom Suit",
+    src: COAT_STARTING_LINK + "men/4.jpg",
+    alt: "A custom-tailored men's suit",
   },
   {
     id: 5,
-    category: "Uniforms",
-    label: "Office Uniform",
-    alt: "Corporate office uniforms",
-    placeholder: "#e0e8f7",
+    category: "Suits",
+    label: "Custom Suit",
+    src: COAT_STARTING_LINK + "men/5.jpg",
+    alt: "A custom-tailored men's suit",
   },
   {
     id: 6,
-    category: "Suits & Barongs",
-    label: "Women's Suit",
-    alt: "Bespoke women's formal suit",
-    placeholder: "#dde6f5",
+    category: "Suits",
+    label: "Custom Suit",
+    src: COAT_STARTING_LINK + "men/6.jpg",
+    alt: "A custom-tailored men's suit",
   },
+  // Women's Coats
   {
     id: 7,
-    category: "Coats for Rent",
-    label: "Tuxedo Coat",
-    alt: "Tuxedo coat available for rent",
-    placeholder: "#cdd9f3",
+    category: "Suits",
+    label: "Custom Suit",
+    src: COAT_STARTING_LINK + "women/1.jpg",
+    alt: "A custom-tailored women's suit",
   },
   {
     id: 8,
-    category: "Uniforms",
-    label: "Organization Uniform",
-    alt: "Organization and club uniforms",
-    placeholder: "#e0e8f7",
+    category: "Suits",
+    label: "Custom Suit",
+    src: COAT_STARTING_LINK + "women/2.jpg",
+    alt: "A custom-tailored women's suit",
   },
   {
     id: 9,
-    category: "Suits & Barongs",
-    label: "Entourage Suit",
-    alt: "Matching entourage suits",
-    placeholder: "#dde6f5",
+    category: "Suits",
+    label: "Custom Suit",
+    src: COAT_STARTING_LINK + "women/3.jpg",
+    alt: "A custom-tailored women's suit",
+  },
+  {
+    id: 10,
+    category: "Suits",
+    label: "Custom Suit",
+    src: COAT_STARTING_LINK + "women/4.jpg",
+    alt: "A custom-tailored women's suit",
+  },
+  // Uniforms
+  {
+    id: 11,
+    category: "Uniforms",
+    label: "Office / School Uniform",
+    src: UNIFORM_STARTING_LINK + "1.jpg",
+    alt: "Corporate office uniforms or School uniforms",
+  },
+  {
+    id: 12,
+    category: "Uniforms",
+    label: "Office / School Uniform",
+    src: UNIFORM_STARTING_LINK + "2.jpg",
+    alt: "Corporate office uniforms or School uniforms",
+  },
+  {
+    id: 13,
+    category: "Uniforms",
+    label: "Office / School Uniform",
+    src: UNIFORM_STARTING_LINK + "3.jpg",
+    alt: "Corporate office uniforms or School uniforms",
+  },
+  {
+    id: 14,
+    category: "Uniforms",
+    label: "Office / School Uniform",
+    src: UNIFORM_STARTING_LINK + "4.jpg",
+    alt: "Corporate office uniforms or School uniforms",
+  },
+  {
+    id: 15,
+    category: "Uniforms",
+    label: "Office / School Uniform",
+    src: UNIFORM_STARTING_LINK + "5.jpg",
+    alt: "Corporate office uniforms or School uniforms",
+  },
+  {
+    id: 16,
+    category: "Uniforms",
+    label: "Office / School Uniform",
+    src: UNIFORM_STARTING_LINK + "6.jpg",
+    alt: "Corporate office uniforms or School uniforms",
+  },
+  {
+    id: 17,
+    category: "Uniforms",
+    label: "Office / School Uniform",
+    src: UNIFORM_STARTING_LINK + "7.jpg",
+    alt: "Corporate office uniforms or School uniforms",
+  },
+  // Barong
+  {
+    id: 18,
+    category: "Suits",
+    label: "Custom Suit",
+    src: COAT_STARTING_LINK + "men/7.jpg",
+    alt: "A custom-tailored men's suit",
   },
 ];
 
@@ -116,7 +186,7 @@ export function Portfolio() {
             Made with <em className="italic text-brand-blue">Pride</em>
           </h2>
           <p className="font-sans text-lg text-ink-muted max-w-xl mx-auto leading-relaxed">
-            Browse a selection of our finished work — from bespoke suits and
+            Browse a selection of our finished work — from custom suits and
             uniforms to formal coats available for rent.
           </p>
           <div className="rule-brand mx-auto mt-6" aria-hidden="true" />
@@ -168,28 +238,20 @@ export function Portfolio() {
                 className={[
                   "group relative overflow-hidden rounded-3xl shadow-[0_4px_16px_-2px_rgba(27,63,166,0.08)]",
                   "hover:-translate-y-1 transition-transform duration-500",
-                  // stagger on desktop
                   i % 3 === 1 ? "lg:mt-8" : "",
                 ].join(" ")}
               >
-                {/* Placeholder image */}
-                <div
-                  className="aspect-4/5 w-full relative overflow-hidden"
-                  style={{ backgroundColor: item.placeholder }}
-                  aria-label={item.alt}
-                >
-                  {/* Placeholder text */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center text-brand-blue/40">
-                    <span className="font-sans text-xs font-semibold tracking-widest uppercase">
-                      Photo Placeholder
-                    </span>
-                    <span className="font-serif text-lg italic mt-1 text-brand-blue/30">
-                      {item.label}
-                    </span>
-                  </div>
-
-                  {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-brand-blue/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                {/* Portfolio image */}
+                <div className="relative w-full aspect-[4/5] overflow-hidden">
+                  <Image
+                    className="object-cover"
+                    aria-label={item.alt}
+                    fill
+                    src={item.src}
+                    alt={item.alt}  
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-brand-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                     <div>
                       <span className="font-sans text-xs text-white/70 tracking-widest uppercase">
                         {item.category}
@@ -221,7 +283,7 @@ export function Portfolio() {
             <button
               type="button"
               onClick={() => setShowAllMobile((prev) => !prev)}
-              className="font-sans text-sm font-semibold text-brand-blue underline underline-offset-4"
+              className="font-sans text-sm font-semibold text-brand-blue underline underline-offset-4 hover:text-brand-blue-light transition-all duration-300 hover:cursor-pointer"
             >
               {showAllMobile ? "Show Less" : "Show More"}
             </button>

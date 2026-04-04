@@ -1,11 +1,15 @@
 import type { MetadataRoute } from "next";
+import { siteUrl } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
+  const base = siteUrl.endsWith("/") ? siteUrl : `${siteUrl}/`;
+
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://marshallstailoring.com/sitemap.xml",
+    sitemap: new URL("sitemap.xml", base).href,
+    host: siteUrl.replace(/^https?:\/\//, ""),
   };
 }

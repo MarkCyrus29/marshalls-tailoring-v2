@@ -3,19 +3,22 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 
 export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-dvh mt-12 flex items-center bg-bg overflow-hidden"
+      className="relative w-full min-h-[85vh] flex items-center bg-bg overflow-hidden pt-16"
       aria-label="Hero"
     >
-      <div className="container-site relative w-full  pb-16 lg:pt-0 lg:pb-0 z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center justify-center min-h-dvh py-8 lg:py-0">
-          {/* ── Text column ── */}
-          <div className="flex flex-col items-start order-2 lg:order-1 ">
+      {/* Decorative Background Shapes */}
+      <div className="absolute top-0 right-0 -translate-y-1/3 translate-x-1/3 w-[50vw] h-[50vw] bg-brand-blue/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-[40vw] h-[40vw] bg-brand-blue/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
+
+      <div className="relative w-[80vw] mx-auto pb-16 lg:pt-0 lg:pb-0 z-10">
+        <div className="grid grid-cols-1 items-center justify-start min-h-[85vh] py-8 w-full mx-auto">
+          <div className="flex flex-col justify-center items-start">
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 12 }}
@@ -38,7 +41,7 @@ export function Hero() {
                 delay: 0.2,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="font-serif text-[3.5rem] sm:text-6xl lg:text-[4.5rem] font-medium text-ink leading-[1.05] mb-8"
+              className="font-serif text-[3.5rem] sm:text-6xl lg:text-[5.5rem] xl:text-[6.5rem] font-medium text-ink leading-[1.05] mb-6 tracking-tight"
             >
               Tailored to <br />
               perfection,
@@ -53,11 +56,11 @@ export function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="font-sans text-lg text-ink-muted leading-relaxed mb-10 max-w-md"
+              className="font-sans text-lg sm:text-xl lg:text-2xl text-ink-muted leading-relaxed mb-6 max-w-3xl"
             >
-              Bespoke suits, barongs, and uniforms crafted with precision in
-              Lipa City. Formal coats also available for rent — for every
-              occasion, every person.
+              Custom suits, barongs, and uniforms crafted with precision in Lipa
+              City. Formal coats also available for rent — for every occasion,
+              every person.
             </motion.p>
 
             {/* CTAs */}
@@ -88,7 +91,7 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.75 }}
-              className="flex flex-wrap items-center gap-4 mt-12 "
+              className="flex flex-wrap items-center gap-4 mt-6 "
             >
               <span className="font-sans text-[10px] text-ink-muted font-semibold uppercase tracking-widest">
                 Suits & Barongs
@@ -103,35 +106,6 @@ export function Hero() {
               </span>
             </motion.div>
           </div>
-
-          {/* ── Image column ── */}
-          <motion.div
-            initial={{ opacity: 0, x: 24 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="relative order-1 lg:order-2  justify-end w-full hidden lg:flex"
-          >
-            <div className="relative w-full max-w-lg lg:ml-auto">
-              {/* Sleek image frame */}
-              <div
-                className="w-full aspect-4/5 bg-white border border-border rounded-sm p-4 shadow-xl relative z-10"
-                aria-hidden="true"
-              >
-                <div className="w-full h-full relative overflow-hidden rounded-sm bg-bg-warm">
-                  <Image
-                    src="/hero-green.jpg"
-                    alt="Marshalls Tailoring — Founders"
-                    fill
-                    className="w-full h-full object-contain scale-110 hover:scale-115 transition-transform duration-1000 ease-out"
-                    priority
-                  />
-                </div>
-              </div>
-
-              {/* Subtle structural accent */}
-              <div className="absolute -bottom-6 -left-6 w-full h-full border border-border rounded-sm bg-bg z-0" />
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>

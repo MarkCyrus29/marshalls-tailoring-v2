@@ -5,7 +5,7 @@ import { Facebook, MapPin, Phone, Mail } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 const services = [
-  "Bespoke Suits & Barongs",
+  "Custom Suits & Barongs",
   "Uniforms (All Types)",
   "Formal Coats for Rent",
   "Women's Formal Wear",

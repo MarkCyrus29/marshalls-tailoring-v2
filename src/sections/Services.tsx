@@ -5,7 +5,7 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 const services = [
   {
     icon: Scissors,
-    title: "Bespoke Suits & Barongs",
+    title: "Custom Suits & Barongs",
     description:
       "Custom-crafted suits and Barong Tagalog for men and women — tailored precisely to your measurements for weddings, graduations, and every milestone occasion.",
     href: "#contact",

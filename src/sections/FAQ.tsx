@@ -8,7 +8,7 @@ const faqs = [
   {
     question: "Do you make suits and barongs for both men and women?",
     answer:
-      "Yes. We craft bespoke suits, coats, and formal wear for both men and women, tailored to your exact measurements and preferences for any occasion.",
+      "Yes. We craft custom suits, coats, and formal wear for both men and women, tailored to your exact measurements and preferences for any occasion.",
   },
   {
     question: "What kinds of uniforms can you make?",
@@ -118,9 +118,7 @@ export function FAQ() {
 
           {/* Right: FAQ list */}
           <AnimatedSection direction="right">
-            <div
-              className="bg-white rounded-3xl border border-border px-6 lg:px-8 py-2"
-            >
+            <div className="bg-white rounded-3xl border border-border px-6 lg:px-8 py-2">
               {faqs.map((faq, i) => (
                 <FAQItem
                   key={faq.question}

@@ -16,19 +16,22 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://marshallstailoring.com"),
   title: {
     default:
-      "Marshalls Tailoring | Bespoke Suits, Uniforms & Coat Rentals — Lipa City",
+      "Marshalls Tailoring | Custom Suits, Uniforms & Coat Rentals — Lipa City",
     template: "%s | Marshalls Tailoring",
   },
   description:
-    "Marshalls Tailoring crafts bespoke suits, barongs, and all kinds of uniforms for men and women in Lipa City, Batangas. Coats and suits available for rent. Visit us at the Lipa City Public Market.",
+    "Marshalls Tailoring crafts custom suits, barongs, and all kinds of uniforms for men and women in Lipa City, Batangas. Coats and suits available for rent. Visit us at the Lipa City Public Market.",
   keywords: [
     "tailoring Lipa City",
-    "bespoke suits Batangas",
+    "custom suits Batangas",
     "uniforms tailor",
     "coat rental Lipa City",
     "barong Tagalog tailor",
     "Marshalls Tailoring",
     "suit alterations Lipa",
+    "suit repair Lipa",
+    "Marshalls Tailoring Lipa",
+    "uniforms Lipa",
   ],
   authors: [{ name: "Marshalls Tailoring" }],
   creator: "Marshalls Tailoring",
@@ -39,9 +42,9 @@ export const metadata: Metadata = {
     url: "https://marshallstailoring.com",
     siteName: "Marshalls Tailoring",
     title:
-      "Marshalls Tailoring | Bespoke Suits, Uniforms & Coat Rentals — Lipa City",
+      "Marshalls Tailoring | Custom Suits, Uniforms & Coat Rentals — Lipa City",
     description:
-      "Crafting bespoke suits, barongs, and uniforms with precision in Lipa City, Batangas. Formal coats and suits also available for rent.",
+      "Crafting custom suits, barongs, and uniforms with precision in Lipa City, Batangas. Formal coats and suits also available for rent.",
     images: [
       {
         url: "/opengraph-image.png",
@@ -55,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Marshalls Tailoring | Lipa City",
     description:
-      "Bespoke suits, uniforms, and coat rentals in Lipa City, Batangas. Precision tailoring for every occasion.",
+      "Custom suits, uniforms, and coat rentals in Lipa City, Batangas. Precision tailoring for every occasion.",
     images: ["/opengraph-image.png"],
   },
   robots: {
