@@ -150,13 +150,12 @@ const items: PortfolioItem[] = [
     src: UNIFORM_STARTING_LINK + "7.jpg",
     alt: "Corporate office uniforms or School uniforms",
   },
-  // Barong
   {
     id: 18,
     category: "Suits",
-    label: "Custom Suit",
+    label: "Barong Tagalog",
     src: COAT_STARTING_LINK + "men/7.jpg",
-    alt: "A custom-tailored men's suit",
+    alt: "Custom Barong Tagalog formal wear",
   },
 ];
 
@@ -186,8 +185,8 @@ export function Portfolio() {
             Made with <em className="italic text-brand-blue">Pride</em>
           </h2>
           <p className="font-sans text-lg text-ink-muted max-w-xl mx-auto leading-relaxed">
-            Browse a selection of our finished work — from custom suits and
-            uniforms to formal coats available for rent.
+            Browse a selection of our finished work — uniforms and custom
+            suits, plus formal coats available for rent.
           </p>
           <div className="rule-brand mx-auto mt-6" aria-hidden="true" />
         </AnimatedSection>

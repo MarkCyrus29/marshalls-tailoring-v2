@@ -4,21 +4,21 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 const services = [
   {
-    icon: Scissors,
-    title: "Custom Suits & Barongs",
-    description:
-      "Custom-crafted suits and Barong Tagalog for men and women — tailored precisely to your measurements for weddings, graduations, and every milestone occasion.",
-    href: "#contact",
-    color: "#e8edf9",
-    accentColor: "#1b3fa6",
-  },
-  {
     icon: Users,
     title: "All Kinds of Uniforms",
     description:
-      "From school to corporate, organization to industry — we craft uniforms that fit well, wear well, and represent your institution with pride.",
+      "Our core focus: school, corporate, office, and organizational uniforms that fit well, wear well, and represent your institution with pride — from single pieces to bulk orders.",
     href: "#contact",
     color: "#eef1fb",
+    accentColor: "#1b3fa6",
+  },
+  {
+    icon: Scissors,
+    title: "Custom Suits & Tailoring",
+    description:
+      "Made-to-measure suits and formal wear for men and women — precise fittings for weddings, graduations, and professional events. Barong Tagalog is also available when you need traditional Filipino formal dress.",
+    href: "#contact",
+    color: "#e8edf9",
     accentColor: "#1b3fa6",
   },
   {
@@ -53,8 +53,9 @@ export function Services() {
             <em className="italic text-brand-blue">Occasion</em>
           </h2>
           <p className="font-sans text-lg text-ink-muted max-w-xl mx-auto leading-relaxed">
-            Whether you need a one-of-a-kind garment or a full set of uniforms,
-            we have the skill and dedication to exceed your expectations.
+            Uniform programs and custom suits are what we do every day — with
+            the same care whether you need one garment or a full organization
+            rollout.
           </p>
           <div className="rule-brand mx-auto mt-6" aria-hidden="true" />
         </AnimatedSection>

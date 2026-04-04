@@ -14,7 +14,7 @@ export function Hero() {
       {/* Decorative Background Shapes */}
       <div className="absolute top-0 right-0 -translate-y-1/3 translate-x-1/3 w-[50vw] h-[50vw] bg-brand-blue/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-[40vw] h-[40vw] bg-brand-blue/10 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[40px_40px] pointer-events-none" />
 
       <div className="relative w-[80vw] mx-auto pb-16 lg:pt-0 lg:pb-0 z-10">
         <div className="grid grid-cols-1 items-center justify-start min-h-[85vh] py-8 w-full mx-auto">
@@ -58,9 +58,9 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="font-sans text-lg sm:text-xl lg:text-2xl text-ink-muted leading-relaxed mb-6 max-w-3xl"
             >
-              Custom suits, barongs, and uniforms crafted with precision in Lipa
-              City. Formal coats also available for rent — for every occasion,
-              every person.
+              School, corporate, and organizational uniforms and custom suits
+              crafted with precision in Lipa City. Formal coats for rent — plus
+              Barong Tagalog when you need Filipino formal wear.
             </motion.p>
 
             {/* CTAs */}
@@ -94,15 +94,19 @@ export function Hero() {
               className="flex flex-wrap items-center gap-4 mt-6 "
             >
               <span className="font-sans text-[10px] text-ink-muted font-semibold uppercase tracking-widest">
-                Suits & Barongs
+                Uniforms
               </span>
               <span className="text-border-strong text-xs">&bull;</span>
               <span className="font-sans text-[10px] text-ink-muted font-semibold uppercase tracking-widest">
-                Corporate Uniforms
+                Custom Suits
               </span>
               <span className="text-border-strong text-xs">&bull;</span>
               <span className="font-sans text-[10px] text-ink-muted font-semibold uppercase tracking-widest">
-                Coat Rentals
+                Coat & Suit Rental
+              </span>
+              <span className="text-border-strong text-xs">&bull;</span>
+              <span className="font-sans text-[10px] text-ink-muted font-semibold uppercase tracking-widest">
+                Barong Tagalog
               </span>
             </motion.div>
           </div>

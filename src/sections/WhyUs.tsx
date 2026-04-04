@@ -18,7 +18,7 @@ const pillars = [
     icon: Building2,
     title: "Trusted by Schools & Organizations",
     description:
-      "Marshalls Tailoring has earned the trust of institutions and businesses across Lipa City for uniform and formal wear needs.",
+      "Marshalls Tailoring has earned the trust of institutions and businesses across Lipa City for uniforms, custom suits, and formal wear programs.",
   },
   {
     icon: MapPin,

@@ -1,11 +1,15 @@
+import { siteUrl } from "@/lib/site";
+
 export default function LocalBusinessSchema() {
+  const origin = siteUrl.endsWith("/") ? siteUrl.slice(0, -1) : siteUrl;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "ClothingStore",
     name: "Marshalls Tailoring",
     description:
-      "Custom suits, barongs, and uniforms for men and women in Lipa City. Formal coats and suits available for rent.",
-    url: "https://marshallstailoring.com",
+      "Uniforms and custom suits for men and women in Lipa City, Batangas — school, corporate, and organizational tailoring. Made-to-measure suits, coat and suit rentals, and Barong Tagalog.",
+    url: origin,
     telephone: ["+639452731100", "+639397401011"],
     email: "marshalls.tailoring@gmail.com",
     address: {

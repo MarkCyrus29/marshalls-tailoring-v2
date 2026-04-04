@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
     sitemap: new URL("sitemap.xml", base).href,
-    host: siteUrl.replace(/^https?:\/\//, ""),
+    host: new URL(base).host,
   };
 }

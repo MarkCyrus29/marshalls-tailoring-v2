@@ -8,12 +8,13 @@ import Script from "next/script";
 
 const serviceOptions = [
   "Select a service...",
-  "Custom Suit or Barong",
-  "Women's Formal Wear",
   "School Uniforms",
   "Corporate / Office Uniforms",
   "Organization Uniforms",
+  "Custom Suit",
+  "Women's Formal Wear",
   "Coat / Suit Rental",
+  "Barong Tagalog",
   "Alterations",
   "Other",
 ];

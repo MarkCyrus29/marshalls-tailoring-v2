@@ -6,9 +6,9 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 const faqs = [
   {
-    question: "Do you make suits and barongs for both men and women?",
+    question: "Do you make uniforms and custom suits for both men and women?",
     answer:
-      "Yes. We craft custom suits, coats, and formal wear for both men and women, tailored to your exact measurements and preferences for any occasion.",
+      "Yes. We tailor school, corporate, and organizational uniforms for all genders, and we also craft made-to-measure suits, coats, and formal wear to your measurements.",
   },
   {
     question: "What kinds of uniforms can you make?",
@@ -34,6 +34,11 @@ const faqs = [
     question: "Where are you located?",
     answer:
       "We are located at the 2nd Floor, Bldg. 1, Lipa City Public Market, Lipa City, Batangas. You can also reach us by phone or message on Facebook.",
+  },
+  {
+    question: "Do you make Barong Tagalog?",
+    answer:
+      "Yes. While uniforms and custom suits are our main focus, we also sew Barong Tagalog for men and women — ideal for weddings, graduations, and formal Filipino dress codes.",
   },
 ];
 
