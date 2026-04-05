@@ -180,8 +180,9 @@ export function Contact() {
               </div>
 
               {/* Map embed placeholder */}
-              <div className="rounded-2xl overflow-hidden border border-border h-86 bg-[#e8edf9] flex items-center justify-center">
+              <div className="rounded-2xl overflow-hidden border border-border h-86 bg-brand-blue-light flex items-center justify-center">
                 <iframe
+                title="Map showing location of Marshalls Tailoring in Lipa City Public Market"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.2639839284784!2d121.1613151!3d13.942881199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd6ca2e6b1f06d%3A0x8186c2023439c014!2s32%20Malabanan%20St%2C%20Lipa%20City%2C%204217%20Batangas!5e0!3m2!1sen!2sph!4v1774966496040!5m2!1sen!2sph"
                   className="w-full h-full border-0"
                   loading="lazy"
