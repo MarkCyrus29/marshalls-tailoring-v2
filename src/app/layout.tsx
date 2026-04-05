@@ -88,6 +88,7 @@ export default function RootLayout({
   return (
     <html lang="en-PH" suppressHydrationWarning>
       <head>
+        <meta name="msvalidate.01" content="FD778BB3ADBFF81F81693B34EF3BD069" />
         <meta name="theme-color" content="#1b3fa6" />
         <meta name="geo.region" content="PH-BTG" />
         <meta name="geo.placename" content="Lipa City, Batangas" />
