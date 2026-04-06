@@ -8,11 +8,7 @@ import { ExternalLink } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import Image from "next/image";
 
-const categories = [
-  "All",
-  "Suits",
-  "Uniforms",
-] as const;
+const categories = ["All", "Suits", "Uniforms"] as const;
 
 type Category = (typeof categories)[number];
 
@@ -105,53 +101,60 @@ const items: PortfolioItem[] = [
     id: 11,
     category: "Uniforms",
     label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "1.jpg",
+    src: UNIFORM_STARTING_LINK + "0.jpg",
     alt: "Corporate office uniforms or School uniforms",
   },
   {
     id: 12,
     category: "Uniforms",
     label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "2.jpg",
+    src: UNIFORM_STARTING_LINK + "1.jpg",
     alt: "Corporate office uniforms or School uniforms",
   },
   {
     id: 13,
     category: "Uniforms",
     label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "3.jpg",
+    src: UNIFORM_STARTING_LINK + "2.jpg",
     alt: "Corporate office uniforms or School uniforms",
   },
   {
     id: 14,
     category: "Uniforms",
     label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "4.jpg",
+    src: UNIFORM_STARTING_LINK + "3.jpg",
     alt: "Corporate office uniforms or School uniforms",
   },
   {
     id: 15,
     category: "Uniforms",
     label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "5.jpg",
+    src: UNIFORM_STARTING_LINK + "4.jpg",
     alt: "Corporate office uniforms or School uniforms",
   },
   {
     id: 16,
     category: "Uniforms",
     label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "6.jpg",
+    src: UNIFORM_STARTING_LINK + "5.jpg",
     alt: "Corporate office uniforms or School uniforms",
   },
   {
     id: 17,
     category: "Uniforms",
     label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "7.jpg",
+    src: UNIFORM_STARTING_LINK + "6.jpg",
     alt: "Corporate office uniforms or School uniforms",
   },
   {
     id: 18,
+    category: "Uniforms",
+    label: "Office / School Uniform",
+    src: UNIFORM_STARTING_LINK + "7.jpg",
+    alt: "Corporate office uniforms or School uniforms",
+  },
+  {
+    id: 19,
     category: "Suits",
     label: "Barong Tagalog",
     src: COAT_STARTING_LINK + "men/7.jpg",
@@ -185,8 +188,8 @@ export function Portfolio() {
             Made with <em className="italic text-brand-blue">Pride</em>
           </h2>
           <p className="font-sans text-lg text-ink-muted max-w-xl mx-auto leading-relaxed">
-            Browse a selection of our finished work — uniforms and custom
-            suits, plus formal coats available for rent.
+            Browse a selection of our finished work — uniforms and custom suits,
+            plus formal coats available for rent.
           </p>
           <div className="rule-brand mx-auto mt-6" aria-hidden="true" />
         </AnimatedSection>
@@ -247,7 +250,7 @@ export function Portfolio() {
                     aria-label={item.alt}
                     fill
                     src={item.src}
-                    alt={item.alt}  
+                    alt={item.alt}
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-brand-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
