@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import Image from "next/image";
-
+import PortfolioItems from "@/data/PortfolioItems.json";
 const categories = ["All", "Suits", "Uniforms"] as const;
 
 type Category = (typeof categories)[number];
@@ -19,148 +19,7 @@ interface PortfolioItem {
   src: string;
   alt: string;
 }
-
-const COAT_STARTING_LINK = "/gallery/coat/";
-const UNIFORM_STARTING_LINK = "/gallery/uniform/";
-
-const items: PortfolioItem[] = [
-  // Men's Coats
-  {
-    id: 1,
-    category: "Suits",
-    label: "Custom Suit",
-    src: COAT_STARTING_LINK + "men/1.jpg",
-    alt: "A custom-tailored men's suit",
-  },
-  {
-    id: 2,
-    category: "Suits",
-    label: "Custom Suit",
-    src: COAT_STARTING_LINK + "men/2.jpg",
-    alt: "A custom-tailored men's suit",
-  },
-  {
-    id: 3,
-    category: "Suits",
-    label: "Custom Suit",
-    src: COAT_STARTING_LINK + "men/3.jpg",
-    alt: "A custom-tailored men's suit",
-  },
-  {
-    id: 4,
-    category: "Suits",
-    label: "Custom Suit",
-    src: COAT_STARTING_LINK + "men/4.jpg",
-    alt: "A custom-tailored men's suit",
-  },
-  {
-    id: 5,
-    category: "Suits",
-    label: "Custom Suit",
-    src: COAT_STARTING_LINK + "men/5.jpg",
-    alt: "A custom-tailored men's suit",
-  },
-  {
-    id: 6,
-    category: "Suits",
-    label: "Custom Suit",
-    src: COAT_STARTING_LINK + "men/6.jpg",
-    alt: "A custom-tailored men's suit",
-  },
-  // Women's Coats
-  {
-    id: 7,
-    category: "Suits",
-    label: "Custom Suit",
-    src: COAT_STARTING_LINK + "women/1.jpg",
-    alt: "A custom-tailored women's suit",
-  },
-  {
-    id: 8,
-    category: "Suits",
-    label: "Custom Suit",
-    src: COAT_STARTING_LINK + "women/2.jpg",
-    alt: "A custom-tailored women's suit",
-  },
-  {
-    id: 9,
-    category: "Suits",
-    label: "Custom Suit",
-    src: COAT_STARTING_LINK + "women/3.jpg",
-    alt: "A custom-tailored women's suit",
-  },
-  {
-    id: 10,
-    category: "Suits",
-    label: "Custom Suit",
-    src: COAT_STARTING_LINK + "women/4.jpg",
-    alt: "A custom-tailored women's suit",
-  },
-  // Uniforms
-  {
-    id: 11,
-    category: "Uniforms",
-    label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "0.jpg",
-    alt: "Corporate office uniforms or School uniforms",
-  },
-  {
-    id: 12,
-    category: "Uniforms",
-    label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "1.jpg",
-    alt: "Corporate office uniforms or School uniforms",
-  },
-  {
-    id: 13,
-    category: "Uniforms",
-    label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "2.jpg",
-    alt: "Corporate office uniforms or School uniforms",
-  },
-  {
-    id: 14,
-    category: "Uniforms",
-    label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "3.jpg",
-    alt: "Corporate office uniforms or School uniforms",
-  },
-  {
-    id: 15,
-    category: "Uniforms",
-    label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "4.jpg",
-    alt: "Corporate office uniforms or School uniforms",
-  },
-  {
-    id: 16,
-    category: "Uniforms",
-    label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "5.jpg",
-    alt: "Corporate office uniforms or School uniforms",
-  },
-  {
-    id: 17,
-    category: "Uniforms",
-    label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "6.jpg",
-    alt: "Corporate office uniforms or School uniforms",
-  },
-  {
-    id: 18,
-    category: "Uniforms",
-    label: "Office / School Uniform",
-    src: UNIFORM_STARTING_LINK + "7.jpg",
-    alt: "Corporate office uniforms or School uniforms",
-  },
-  {
-    id: 19,
-    category: "Suits",
-    label: "Barong Tagalog",
-    src: COAT_STARTING_LINK + "men/7.jpg",
-    alt: "Custom Barong Tagalog formal wear",
-  },
-];
+const items: PortfolioItem[] = PortfolioItems as PortfolioItem[];
 
 export function Portfolio() {
   const [active, setActive] = useState<Category>("All");

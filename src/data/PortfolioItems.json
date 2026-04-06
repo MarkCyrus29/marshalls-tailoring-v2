@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "category": "Suits",
+    "label": "Custom Suit",
+    "src": "/gallery/coat/men/1.jpg",
+    "alt": "A custom-tailored men's suit"
+  },
+  {
+    "id": 11,
+    "category": "Uniforms",
+    "label": "Office / School Uniform",
+    "src": "/gallery/uniform/0.jpg",
+    "alt": "Corporate office uniforms or School uniforms"
+  },
+  {
+    "id": 2,
+    "category": "Suits",
+    "label": "Custom Suit",
+    "src": "/gallery/coat/men/2.jpg",
+    "alt": "A custom-tailored men's suit"
+  },
+  {
+    "id": 12,
+    "category": "Uniforms",
+    "label": "Office / School Uniform",
+    "src": "/gallery/uniform/1.jpg",
+    "alt": "Corporate office uniforms or School uniforms"
+  },
+  {
+    "id": 3,
+    "category": "Suits",
+    "label": "Custom Suit",
+    "src": "/gallery/coat/men/3.jpg",
+    "alt": "A custom-tailored men's suit"
+  },
+  {
+    "id": 13,
+    "category": "Uniforms",
+    "label": "Office / School Uniform",
+    "src": "/gallery/uniform/2.jpg",
+    "alt": "Corporate office uniforms or School uniforms"
+  },
+  {
+    "id": 4,
+    "category": "Suits",
+    "label": "Custom Suit",
+    "src": "/gallery/coat/men/4.jpg",
+    "alt": "A custom-tailored men's suit"
+  },
+  {
+    "id": 14,
+    "category": "Uniforms",
+    "label": "Office / School Uniform",
+    "src": "/gallery/uniform/3.jpg",
+    "alt": "Corporate office uniforms or School uniforms"
+  },
+  {
+    "id": 5,
+    "category": "Suits",
+    "label": "Custom Suit",
+    "src": "/gallery/coat/men/5.jpg",
+    "alt": "A custom-tailored men's suit"
+  },
+  {
+    "id": 15,
+    "category": "Uniforms",
+    "label": "Office / School Uniform",
+    "src": "/gallery/uniform/4.jpg",
+    "alt": "Corporate office uniforms or School uniforms"
+  },
+  {
+    "id": 6,
+    "category": "Suits",
+    "label": "Custom Suit",
+    "src": "/gallery/coat/men/6.jpg",
+    "alt": "A custom-tailored men's suit"
+  },
+  {
+    "id": 16,
+    "category": "Uniforms",
+    "label": "Office / School Uniform",
+    "src": "/gallery/uniform/5.jpg",
+    "alt": "Corporate office uniforms or School uniforms"
+  },
+  {
+    "id": 7,
+    "category": "Suits",
+    "label": "Custom Suit",
+    "src": "/gallery/coat/women/1.jpg",
+    "alt": "A custom-tailored women's suit"
+  },
+  {
+    "id": 17,
+    "category": "Uniforms",
+    "label": "Office / School Uniform",
+    "src": "/gallery/uniform/6.jpg",
+    "alt": "Corporate office uniforms or School uniforms"
+  },
+  {
+    "id": 8,
+    "category": "Suits",
+    "label": "Custom Suit",
+    "src": "/gallery/coat/women/2.jpg",
+    "alt": "A custom-tailored women's suit"
+  },
+  {
+    "id": 18,
+    "category": "Uniforms",
+    "label": "Office / School Uniform",
+    "src": "/gallery/uniform/7.jpg",
+    "alt": "Corporate office uniforms or School uniforms"
+  },
+  {
+    "id": 9,
+    "category": "Suits",
+    "label": "Custom Suit",
+    "src": "/gallery/coat/women/3.jpg",
+    "alt": "A custom-tailored women's suit"
+  },
+  {
+    "id": 19,
+    "category": "Uniforms",
+    "label": "Office / School Uniform",
+    "src": "/gallery/uniform/8.jpg",
+    "alt": "Corporate office uniforms or School uniforms"
+  },
+  {
+    "id": 10,
+    "category": "Suits",
+    "label": "Custom Suit",
+    "src": "/gallery/coat/women/4.jpg",
+    "alt": "A custom-tailored women's suit"
+  },
+  {
+    "id": 20,
+    "category": "Suits",
+    "label": "Barong Tagalog",
+    "src": "/gallery/coat/men/7.jpg",
+    "alt": "Custom Barong Tagalog formal wear"
+  }
+]
