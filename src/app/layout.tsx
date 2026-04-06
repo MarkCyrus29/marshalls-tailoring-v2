@@ -18,8 +18,7 @@ const metadataOrigin = siteUrl.endsWith("/") ? siteUrl : `${siteUrl}/`;
 export const metadata: Metadata = {
   metadataBase: new URL(metadataOrigin),
   title: {
-    default:
-      "Marshalls Tailoring | Uniforms, Custom Suits & Coat Rentals — Lipa City",
+    default: "Marshalls Tailoring | Custom Suits & Uniforms Lipa",
     template: "%s | Marshalls Tailoring",
   },
   description:
@@ -47,8 +46,7 @@ export const metadata: Metadata = {
     locale: "en_PH",
     url: metadataOrigin,
     siteName: "Marshalls Tailoring",
-    title:
-      "Marshalls Tailoring | Uniforms, Custom Suits & Coat Rentals — Lipa City",
+    title: "Marshalls Tailoring | Custom Suits & Uniforms Lipa",
     description:
       "Custom uniforms and made-to-measure suits in Lipa City, Batangas — corporate, school, and organizational tailoring. Coat and suit rentals; Barong Tagalog also available.",
     images: [
@@ -62,7 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marshalls Tailoring | Uniforms & Custom Suits — Lipa City",
+    title: "Marshalls Tailoring | Custom Suits & Uniforms Lipa",
     description:
       "Uniforms and custom suits in Lipa City, Batangas. Corporate and school orders, made-to-measure tailoring, and coat rentals.",
     images: ["/opengraph-image.png"],
